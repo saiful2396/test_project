@@ -11,10 +11,11 @@ class _ScreenABranchState extends State<ScreenABranch> {
   var a = 10;
   var b = 10;
 
+  final String name = "Saiful";
+  final String fullName = "Islam Kabir";
+
   @override
   Widget build(BuildContext context) {
-    const String name = "Saiful";
-    const String fullName = "Islam Kabir";
     return Scaffold(
       appBar: AppBar(
         title: const Text('Screen A New Title'),

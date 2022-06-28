@@ -11,11 +11,11 @@ class _ScreenBBranchState extends State<ScreenBBranch> {
 
   var a = 10;
   var b = 10;
+  final array = [];
+  final String name = "Hello World";
 
   @override
   Widget build(BuildContext context) {
-    const array = [];
-    const String name = "Hello World";
     return Scaffold(
       appBar: AppBar(
         title: const Text('Screen for B Branch'),
