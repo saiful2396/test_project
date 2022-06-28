@@ -18,8 +18,11 @@ class _ScreenBBranchState extends State<ScreenBBranch> {
       appBar: AppBar(
         title: const Text('Screen for B Branch'),
       ),
-      body: const Center(
-        child: Text('Another Brand new body for branch B'),
+      body: Column(
+        children: const [
+          Text("Screen a new body for test purpose"),
+          Text('Change By B Branch'),
+        ],
       ),
     );
   }
