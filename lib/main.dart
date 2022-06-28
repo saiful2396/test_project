@@ -49,6 +49,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  bool hitButton = false;
 
   void _incrementCounter() {
     setState(() {
@@ -103,11 +104,18 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headline4,
             ),
             TextButton(
-                onPressed: () {
+              onPressed: () {
+                if (hitButton) {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (_) => const ScreenA()));
-                },
-                child: const Text('Button A'))
+                } else {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => const ScreenB()));
+                }
+              },
+              child:
+                  hitButton ? const Text('Button A') : const Text('Button B'),
+            ),
           ],
         ),
       ),
@@ -131,6 +139,22 @@ class ScreenA extends StatelessWidget {
       ),
       body: const Center(
         child: Text('Test Screen for Branch A'),
+      ),
+    );
+  }
+}
+
+class ScreenB extends StatelessWidget {
+  const ScreenB({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Screen B'),
+      ),
+      body: const Center(
+        child: Text('Test Screen for Branch B'),
       ),
     );
   }
