@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:test_project/screenABranch.dart';
 
+import 'ScreenBBranch.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -122,7 +124,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (_) => const ScreenABranch()));
                 },
-                child: const Text('New Button for Screen A'))
+                child: const Text('New Button for Screen A')),
+            TextButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => const ScreenBBranch()));
+                },
+                child: const Text('New Button for Screen A')),
           ],
         ),
       ),
