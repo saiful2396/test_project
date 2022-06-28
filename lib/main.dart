@@ -102,6 +102,12 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            TextButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => const ScreenA()));
+                },
+                child: const Text('Button A'))
           ],
         ),
       ),
@@ -110,6 +116,22 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class ScreenA extends StatelessWidget {
+  const ScreenA({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Screen A'),
+      ),
+      body: const Center(
+        child: Text('Test Screen for Branch A'),
+      ),
     );
   }
 }
