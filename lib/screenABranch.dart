@@ -5,6 +5,8 @@ class ScreenABranch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const String name = "Saiful";
+    const String fullName = "Islam Kabir";
     return Scaffold(
       appBar: AppBar(
         title: const Text('Screen A New Title'),
