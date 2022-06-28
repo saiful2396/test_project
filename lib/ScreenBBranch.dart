@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 
-class ScreenBBranch extends StatelessWidget {
+class ScreenBBranch extends StatefulWidget {
   const ScreenBBranch({Key? key}) : super(key: key);
 
   @override
+  State<ScreenBBranch> createState() => _ScreenBBranchState();
+}
+
+class _ScreenBBranchState extends State<ScreenBBranch> {
+
+  final array = [];
+  final String name = "Hello World";
+
+  @override
   Widget build(BuildContext context) {
-    const array = [];
-    const String name = "Hello World";
     return Scaffold(
       appBar: AppBar(
         title: const Text('Screen for B Branch'),
