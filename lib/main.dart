@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ScreenBBranch.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -116,6 +118,12 @@ class _MyHomePageState extends State<MyHomePage> {
               child:
                   hitButton ? const Text('Button A') : const Text('Button B'),
             ),
+            TextButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => const ScreenBBranch()));
+                },
+                child: const Text('New Button for Screen A')),
           ],
         ),
       ),
