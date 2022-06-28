@@ -24,6 +24,8 @@ class _ScreenBBranchState extends State<ScreenBBranch> {
         children:const [
           Text('Another Brand new body for branch B'),
           Text('Here is another peace of code add by a branch'),
+          Text("Screen a new body for test purpose"),
+          Text('Change By B Branch'),
         ],
       ),
     );

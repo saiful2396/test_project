@@ -24,6 +24,7 @@ class _ScreenABranchState extends State<ScreenABranch> {
         children: const [
           Text("Screen a new body for test purpose"),
           Text("Here is double change by a branch"),
+          Text('Change By B Branch'),
         ],
       ),
     );
