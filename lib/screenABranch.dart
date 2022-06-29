@@ -21,10 +21,11 @@ class _ScreenABranchState extends State<ScreenABranch> {
         title: const Text('Screen A New Title'),
       ),
       body: Column(
-        children: const [
-          Text("Screen a new body for test purpose"),
-          Text("Here is double change by a branch"),
-          Text('Change By B Branch'),
+        children: [
+          const Text("Screen a new body for test purpose"),
+          const Text("Here is double change by a branch"),
+          const Text('Change By B Branch'),
+          ElevatedButton(onPressed: ()=> debugPrint('Hello World'), child: const Text('Tap Me!'))
         ],
       ),
     );
