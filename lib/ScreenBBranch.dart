@@ -8,7 +8,6 @@ class ScreenBBranch extends StatefulWidget {
 }
 
 class _ScreenBBranchState extends State<ScreenBBranch> {
-
   var a = 10;
   var b = 10;
   final array = [];
@@ -26,7 +25,12 @@ class _ScreenBBranchState extends State<ScreenBBranch> {
           const Text('Here is another peace of code add by a branch'),
           const Text("Screen a new body for test purpose"),
           const Text('Change By B Branch'),
-          ElevatedButton(onPressed: ()=> debugPrint('Nice Work'), child: const Text('Tap!'))
+          ElevatedButton(
+              onPressed: () => debugPrint('Nice Work'),
+              child: const Text('Tap!')),
+          ElevatedButton(
+              onPressed: () => debugPrint('From Branch B'),
+              child: const Text('Tap Branch B!')),
         ],
       ),
     );

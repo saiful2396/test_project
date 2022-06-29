@@ -25,7 +25,12 @@ class _ScreenABranchState extends State<ScreenABranch> {
           const Text("Screen a new body for test purpose"),
           const Text("Here is double change by a branch"),
           const Text('Change By B Branch'),
-          ElevatedButton(onPressed: ()=> debugPrint('Hello World'), child: const Text('Tap Me!'))
+          ElevatedButton(
+              onPressed: () => debugPrint('Hello World'),
+              child: const Text('Tap Me!')),
+          ElevatedButton(
+              onPressed: () => debugPrint('Do Work From Branch B'),
+              child: const Text('Tap Tap B!')),
         ],
       ),
     );
