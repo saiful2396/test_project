@@ -106,6 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+
             TextButton(
               onPressed: () {
                 if (hitButton) {
@@ -131,6 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       MaterialPageRoute(builder: (_) => const ScreenBBranch()));
                 },
                 child: const Text('New Button for Screen A')),
+
           ],
         ),
       ),
@@ -142,6 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 
 class ScreenA extends StatelessWidget {
   const ScreenA({Key? key}) : super(key: key);
@@ -174,3 +177,4 @@ class ScreenB extends StatelessWidget {
     );
   }
 }
+
